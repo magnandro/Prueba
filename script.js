@@ -2,10 +2,17 @@
 //Ingeniero Luis Alejandro Moreno Fresneda
 //Funcion que enlaza el click del boton con la funcionalidad
 function btnConvertir(){
+	var val=document.getElementById('txNumero').value;
+	if(!isNaN(val)){
 	//Se asigna una variable que se va a contener la conversión del numero décimal
 	var str= ConvertirRomano(document.getElementById('txNumero').value);
 	//Una vez se tiene el resultado se inyecta en el area de la interfaz donde el usuario lo puede consultar
 	document.getElementById('Resultado').innerHTML=str;
+	}
+	else
+	{
+		alert('El valor debe ser numerico');
+	}
 }
 //Funcion recurrente que se encarga de la conversion del numero decimal
 function ConvertirRomano(numero){
