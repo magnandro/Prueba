@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.over{ text-decoration:overline;}
+
+#Resultado{ background-color:#FFC;}
+
+
+#form1 p label {
+	font-weight: bold;
+	text-align: center;
+}
