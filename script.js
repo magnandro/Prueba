@@ -4,10 +4,11 @@
 function btnConvertir(){
 	var val=document.getElementById('txNumero').value;
 	if(!isNaN(val)){
-	//Se asigna una variable que se va a contener la conversión del numero décimal
-	var str= ConvertirRomano(document.getElementById('txNumero').value);
-	//Una vez se tiene el resultado se inyecta en el area de la interfaz donde el usuario lo puede consultar
-	document.getElementById('Resultado').innerHTML=str;
+		//Se asigna una variable que se va a contener la conversión del numero décimal
+		val=Math.abs(val); 
+		var str= ConvertirRomano(val);
+		//Una vez se tiene el resultado se inyecta en el area de la interfaz donde el usuario lo puede consultar
+		document.getElementById('Resultado').innerHTML=str;
 	}
 	else
 	{
