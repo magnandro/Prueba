@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Conversion de Décimales a Romanos</title>
+<link rel="stylesheet"  href="estilos.css" />
+<script src="script.js"></script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <p>
+    <label>Conversor décimal a romano<br />
+      <br />
+      <input type="text" name="txNumero" id="txNumero" maxlength="6" />
+    </label>
+    <label>
+      <input type="button" name="button" id="button" value="Convertir"  onclick="btnConvertir();"/>
+    </label>
+  </p>
+  <p>Notación romana:</p>
+  <p><span id="Resultado"></span></p>
+  <p>Tenga en cuenta lo siguiente:</p>
+  <table border="1" cellpadding="5" cellspacing="1">
+    <tbody>
+      <tr bgcolor="#E1ECF7">
+        <th>Romano (miles)</th>
+        <th>Decimal</th>
+        <th>Nominación</th>
+      </tr>
+      <tr bgcolor="#F0F5FA" align="right">
+        <td class="over">V</td>
+        <td>5000</td>
+        <td>cinco mil</td>
+      </tr>
+      <tr bgcolor="#F0F5FA" align="right">
+        <td class="over">X</td>
+        <td>10 000</td>
+        <td>diez mil</td>
+      </tr>
+      <tr bgcolor="#F0F5FA" align="right">
+        <td class="over">L</td>
+        <td>50 000</td>
+        <td>cincuenta mil</td>
+      </tr>
+      <tr bgcolor="#F0F5FA" align="right">
+        <td class="over">C</td>
+        <td>100 000</td>
+        <td>cien mil</td>
+      </tr>
+      <tr bgcolor="#F0F5FA" align="right">
+        <td class="over">D</td>
+        <td>500 000</td>
+        <td>quinientos mil</td>
+      </tr>
+      <tr bgcolor="#F0F5FA" align="right">
+        <td class="over">M</td>
+        <td>1 000 000</td>
+        <td>un millón</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+</form>
+</body>
+</html>
